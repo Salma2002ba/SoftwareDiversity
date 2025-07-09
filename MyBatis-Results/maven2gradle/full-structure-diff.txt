@@ -1,0 +1,590 @@
+Only in maven-extracted/META-INF: LICENSE
+diff -r maven-extracted/META-INF/MANIFEST.MF gradle-extracted/META-INF/MANIFEST.MF
+2,101d1
+< Created-By: Maven JAR Plugin 3.4.2
+< Build-Jdk-Spec: 17
+< Specification-Title: mybatis
+< Specification-Version: 3.6
+< Specification-Vendor: MyBatis.org
+< Implementation-Title: mybatis
+< Implementation-Version: 3.6.0-SNAPSHOT
+< Implementation-Vendor: MyBatis.org
+< Automatic-Module-Name: org.mybatis
+< Copyright: 2024
+< Git-Revision: 7fd9edc9bc7cd15d0652310c8572605f34a2db5a
+< X-Compile-Release-JDK: 11
+< X-Compile-Source-JDK: 11
+< X-Compile-Target-JDK: 11
+< Bundle-Description: The MyBatis SQL mapper framework makes it easier to 
+<  use a relational database with object-oriented     applications. MyBati
+<  s couples objects with stored procedures or SQL statements using a XML 
+<  descriptor or     annotations. Simplicity is the biggest advantage of t
+<  he MyBatis data mapper over object relational mapping     tools.
+< Bundle-DocURL: https://www.mybatis.org/mybatis-3/
+< Bundle-License: "The Apache Software License, Version 2.0";link="https:/
+<  /www.apache.org/licenses/LICENSE-2.0.txt"
+< Bundle-ManifestVersion: 2
+< Bundle-Name: mybatis
+< Bundle-SCM: url="https://github.com/mybatis/mybatis-3",connection="scm:g
+<  it:ssh://git@github.com/mybatis/mybatis-3.git",developer-connection="sc
+<  m:git:ssh://git@github.com/mybatis/mybatis-3.git",tag=HEAD
+< Bundle-SymbolicName: org.mybatis.mybatis
+< Bundle-Vendor: MyBatis.org
+< Bundle-Version: 3.6.0.SNAPSHOT
+< DynamicImport-Package: *
+< Export-Package: org.apache.ibatis;version="3.6.0.SNAPSHOT",org.apache.ib
+<  atis.annotations;version="3.6.0.SNAPSHOT",org.apache.ibatis.binding;ver
+<  sion="3.6.0.SNAPSHOT",org.apache.ibatis.builder;version="3.6.0.SNAPSHOT
+<  ",org.apache.ibatis.builder.annotation;version="3.6.0.SNAPSHOT",org.apa
+<  che.ibatis.builder.xml;version="3.6.0.SNAPSHOT",org.apache.ibatis.cache
+<  ;version="3.6.0.SNAPSHOT",org.apache.ibatis.cache.decorators;version="3
+<  .6.0.SNAPSHOT",org.apache.ibatis.cache.impl;version="3.6.0.SNAPSHOT",or
+<  g.apache.ibatis.cursor;version="3.6.0.SNAPSHOT",org.apache.ibatis.curso
+<  r.defaults;version="3.6.0.SNAPSHOT",org.apache.ibatis.datasource;versio
+<  n="3.6.0.SNAPSHOT",org.apache.ibatis.datasource.jndi;version="3.6.0.SNA
+<  PSHOT",org.apache.ibatis.datasource.pooled;version="3.6.0.SNAPSHOT",org
+<  .apache.ibatis.datasource.unpooled;version="3.6.0.SNAPSHOT",org.apache.
+<  ibatis.exceptions;version="3.6.0.SNAPSHOT",org.apache.ibatis.executor;v
+<  ersion="3.6.0.SNAPSHOT",org.apache.ibatis.executor.keygen;version="3.6.
+<  0.SNAPSHOT",org.apache.ibatis.executor.loader;version="3.6.0.SNAPSHOT",
+<  org.apache.ibatis.executor.loader.cglib;version="3.6.0.SNAPSHOT",org.ap
+<  ache.ibatis.executor.loader.javassist;version="3.6.0.SNAPSHOT",org.apac
+<  he.ibatis.executor.parameter;version="3.6.0.SNAPSHOT",org.apache.ibatis
+<  .executor.result;version="3.6.0.SNAPSHOT",org.apache.ibatis.executor.re
+<  sultset;version="3.6.0.SNAPSHOT",org.apache.ibatis.executor.statement;v
+<  ersion="3.6.0.SNAPSHOT",org.apache.ibatis.io;version="3.6.0.SNAPSHOT",o
+<  rg.apache.ibatis.jdbc;version="3.6.0.SNAPSHOT",org.apache.ibatis.loggin
+<  g;version="3.6.0.SNAPSHOT",org.apache.ibatis.logging.commons;version="3
+<  .6.0.SNAPSHOT",org.apache.ibatis.logging.jdbc;version="3.6.0.SNAPSHOT",
+<  org.apache.ibatis.logging.jdk14;version="3.6.0.SNAPSHOT",org.apache.iba
+<  tis.logging.log4j;version="3.6.0.SNAPSHOT",org.apache.ibatis.logging.lo
+<  g4j2;version="3.6.0.SNAPSHOT",org.apache.ibatis.logging.nologging;versi
+<  on="3.6.0.SNAPSHOT",org.apache.ibatis.logging.slf4j;version="3.6.0.SNAP
+<  SHOT",org.apache.ibatis.logging.stdout;version="3.6.0.SNAPSHOT",org.apa
+<  che.ibatis.mapping;version="3.6.0.SNAPSHOT",org.apache.ibatis.parsing;v
+<  ersion="3.6.0.SNAPSHOT",org.apache.ibatis.plugin;version="3.6.0.SNAPSHO
+<  T",org.apache.ibatis.reflection;version="3.6.0.SNAPSHOT",org.apache.iba
+<  tis.reflection.factory;version="3.6.0.SNAPSHOT",org.apache.ibatis.refle
+<  ction.invoker;version="3.6.0.SNAPSHOT",org.apache.ibatis.reflection.pro
+<  perty;version="3.6.0.SNAPSHOT",org.apache.ibatis.reflection.wrapper;ver
+<  sion="3.6.0.SNAPSHOT",org.apache.ibatis.scripting;version="3.6.0.SNAPSH
+<  OT",org.apache.ibatis.scripting.defaults;version="3.6.0.SNAPSHOT",org.a
+<  pache.ibatis.scripting.xmltags;version="3.6.0.SNAPSHOT",org.apache.ibat
+<  is.session;version="3.6.0.SNAPSHOT",org.apache.ibatis.session.defaults;
+<  version="3.6.0.SNAPSHOT",org.apache.ibatis.transaction;version="3.6.0.S
+<  NAPSHOT",org.apache.ibatis.transaction.jdbc;version="3.6.0.SNAPSHOT",or
+<  g.apache.ibatis.transaction.managed;version="3.6.0.SNAPSHOT",org.apache
+<  .ibatis.type;version="3.6.0.SNAPSHOT",org.apache.ibatis.javassist.util.
+<  proxy;version="3.6.0.SNAPSHOT"
+< Import-Package: java.io;resolution:=optional,java.lang;resolution:=optio
+<  nal,java.lang.annotation;resolution:=optional,java.lang.invoke;resoluti
+<  on:=optional,java.lang.ref;resolution:=optional,java.lang.reflect;resol
+<  ution:=optional,java.math;resolution:=optional,java.net;resolution:=opt
+<  ional,java.nio.charset;resolution:=optional,java.nio.file;resolution:=o
+<  ptional,java.security;resolution:=optional,java.sql;resolution:=optiona
+<  l,java.text;resolution:=optional,java.time;resolution:=optional,java.ti
+<  me.chrono;resolution:=optional,java.time.temporal;resolution:=optional,
+<  java.util;resolution:=optional,java.util.concurrent;resolution:=optiona
+<  l,java.util.concurrent.locks;resolution:=optional,java.util.function;re
+<  solution:=optional,java.util.jar;resolution:=optional,java.util.logging
+<  ;resolution:=optional,java.util.regex;resolution:=optional,java.util.st
+<  ream;resolution:=optional,javassist.util.proxy;resolution:=optional;ver
+<  sion="[3.30,4)",javax.naming;resolution:=optional,javax.sql;resolution:
+<  =optional,javax.xml.namespace;resolution:=optional,javax.xml.parsers;re
+<  solution:=optional,javax.xml.xpath;resolution:=optional,net.sf.cglib.pr
+<  oxy;resolution:=optional,ognl;resolution:=optional,org.apache.commons.l
+<  ogging;resolution:=optional;version="[1.3,2)",org.apache.log4j;resoluti
+<  on:=optional;version="[1.2,2)",org.apache.logging.log4j;resolution:=opt
+<  ional;version="[2.20,3)",org.apache.logging.log4j.message;resolution:=o
+<  ptional;version="[2.24,3)",org.apache.logging.log4j.spi;resolution:=opt
+<  ional;version="[2.24,3)",org.slf4j;resolution:=optional;version="[2.0,3
+<  )",org.slf4j.spi;resolution:=optional;version="[2.0,3)",org.w3c.dom;res
+<  olution:=optional,org.xml.sax;resolution:=optional
+< Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=11))"
+Only in maven-extracted/META-INF: NOTICE
+Only in maven-extracted/META-INF: maven
+Binary files maven-extracted/org/apache/ibatis/annotations/Arg.class and gradle-extracted/org/apache/ibatis/annotations/Arg.class differ
+Binary files maven-extracted/org/apache/ibatis/annotations/AutomapConstructor.class and gradle-extracted/org/apache/ibatis/annotations/AutomapConstructor.class differ
+Binary files maven-extracted/org/apache/ibatis/annotations/CacheNamespace.class and gradle-extracted/org/apache/ibatis/annotations/CacheNamespace.class differ
+Binary files maven-extracted/org/apache/ibatis/annotations/CacheNamespaceRef.class and gradle-extracted/org/apache/ibatis/annotations/CacheNamespaceRef.class differ
+Binary files maven-extracted/org/apache/ibatis/annotations/Case.class and gradle-extracted/org/apache/ibatis/annotations/Case.class differ
+Binary files maven-extracted/org/apache/ibatis/annotations/ConstructorArgs.class and gradle-extracted/org/apache/ibatis/annotations/ConstructorArgs.class differ
+Binary files maven-extracted/org/apache/ibatis/annotations/Delete$List.class and gradle-extracted/org/apache/ibatis/annotations/Delete$List.class differ
+Binary files maven-extracted/org/apache/ibatis/annotations/Delete.class and gradle-extracted/org/apache/ibatis/annotations/Delete.class differ
+Binary files maven-extracted/org/apache/ibatis/annotations/DeleteProvider$List.class and gradle-extracted/org/apache/ibatis/annotations/DeleteProvider$List.class differ
+Binary files maven-extracted/org/apache/ibatis/annotations/DeleteProvider.class and gradle-extracted/org/apache/ibatis/annotations/DeleteProvider.class differ
+Binary files maven-extracted/org/apache/ibatis/annotations/Flush.class and gradle-extracted/org/apache/ibatis/annotations/Flush.class differ
+Binary files maven-extracted/org/apache/ibatis/annotations/Insert$List.class and gradle-extracted/org/apache/ibatis/annotations/Insert$List.class differ
+Binary files maven-extracted/org/apache/ibatis/annotations/Insert.class and gradle-extracted/org/apache/ibatis/annotations/Insert.class differ
+Binary files maven-extracted/org/apache/ibatis/annotations/InsertProvider$List.class and gradle-extracted/org/apache/ibatis/annotations/InsertProvider$List.class differ
+Binary files maven-extracted/org/apache/ibatis/annotations/InsertProvider.class and gradle-extracted/org/apache/ibatis/annotations/InsertProvider.class differ
+Binary files maven-extracted/org/apache/ibatis/annotations/Lang.class and gradle-extracted/org/apache/ibatis/annotations/Lang.class differ
+Binary files maven-extracted/org/apache/ibatis/annotations/Many.class and gradle-extracted/org/apache/ibatis/annotations/Many.class differ
+Binary files maven-extracted/org/apache/ibatis/annotations/MapKey.class and gradle-extracted/org/apache/ibatis/annotations/MapKey.class differ
+Binary files maven-extracted/org/apache/ibatis/annotations/Mapper.class and gradle-extracted/org/apache/ibatis/annotations/Mapper.class differ
+Binary files maven-extracted/org/apache/ibatis/annotations/One.class and gradle-extracted/org/apache/ibatis/annotations/One.class differ
+Binary files maven-extracted/org/apache/ibatis/annotations/Options$FlushCachePolicy.class and gradle-extracted/org/apache/ibatis/annotations/Options$FlushCachePolicy.class differ
+Binary files maven-extracted/org/apache/ibatis/annotations/Options$List.class and gradle-extracted/org/apache/ibatis/annotations/Options$List.class differ
+Binary files maven-extracted/org/apache/ibatis/annotations/Options.class and gradle-extracted/org/apache/ibatis/annotations/Options.class differ
+Binary files maven-extracted/org/apache/ibatis/annotations/Param.class and gradle-extracted/org/apache/ibatis/annotations/Param.class differ
+Binary files maven-extracted/org/apache/ibatis/annotations/Property.class and gradle-extracted/org/apache/ibatis/annotations/Property.class differ
+Binary files maven-extracted/org/apache/ibatis/annotations/Result.class and gradle-extracted/org/apache/ibatis/annotations/Result.class differ
+Binary files maven-extracted/org/apache/ibatis/annotations/ResultMap.class and gradle-extracted/org/apache/ibatis/annotations/ResultMap.class differ
+Binary files maven-extracted/org/apache/ibatis/annotations/ResultType.class and gradle-extracted/org/apache/ibatis/annotations/ResultType.class differ
+Binary files maven-extracted/org/apache/ibatis/annotations/Results.class and gradle-extracted/org/apache/ibatis/annotations/Results.class differ
+Binary files maven-extracted/org/apache/ibatis/annotations/Select$List.class and gradle-extracted/org/apache/ibatis/annotations/Select$List.class differ
+Binary files maven-extracted/org/apache/ibatis/annotations/Select.class and gradle-extracted/org/apache/ibatis/annotations/Select.class differ
+Binary files maven-extracted/org/apache/ibatis/annotations/SelectKey$List.class and gradle-extracted/org/apache/ibatis/annotations/SelectKey$List.class differ
+Binary files maven-extracted/org/apache/ibatis/annotations/SelectKey.class and gradle-extracted/org/apache/ibatis/annotations/SelectKey.class differ
+Binary files maven-extracted/org/apache/ibatis/annotations/SelectProvider$List.class and gradle-extracted/org/apache/ibatis/annotations/SelectProvider$List.class differ
+Binary files maven-extracted/org/apache/ibatis/annotations/SelectProvider.class and gradle-extracted/org/apache/ibatis/annotations/SelectProvider.class differ
+Binary files maven-extracted/org/apache/ibatis/annotations/TypeDiscriminator.class and gradle-extracted/org/apache/ibatis/annotations/TypeDiscriminator.class differ
+Binary files maven-extracted/org/apache/ibatis/annotations/Update$List.class and gradle-extracted/org/apache/ibatis/annotations/Update$List.class differ
+Binary files maven-extracted/org/apache/ibatis/annotations/Update.class and gradle-extracted/org/apache/ibatis/annotations/Update.class differ
+Binary files maven-extracted/org/apache/ibatis/annotations/UpdateProvider$List.class and gradle-extracted/org/apache/ibatis/annotations/UpdateProvider$List.class differ
+Binary files maven-extracted/org/apache/ibatis/annotations/UpdateProvider.class and gradle-extracted/org/apache/ibatis/annotations/UpdateProvider.class differ
+Only in maven-extracted/org/apache/ibatis/annotations: package-info.class
+Binary files maven-extracted/org/apache/ibatis/binding/BindingException.class and gradle-extracted/org/apache/ibatis/binding/BindingException.class differ
+Binary files maven-extracted/org/apache/ibatis/binding/MapperMethod$1.class and gradle-extracted/org/apache/ibatis/binding/MapperMethod$1.class differ
+Binary files maven-extracted/org/apache/ibatis/binding/MapperMethod$MethodSignature.class and gradle-extracted/org/apache/ibatis/binding/MapperMethod$MethodSignature.class differ
+Binary files maven-extracted/org/apache/ibatis/binding/MapperMethod$ParamMap.class and gradle-extracted/org/apache/ibatis/binding/MapperMethod$ParamMap.class differ
+Binary files maven-extracted/org/apache/ibatis/binding/MapperMethod$SqlCommand.class and gradle-extracted/org/apache/ibatis/binding/MapperMethod$SqlCommand.class differ
+Binary files maven-extracted/org/apache/ibatis/binding/MapperMethod.class and gradle-extracted/org/apache/ibatis/binding/MapperMethod.class differ
+Binary files maven-extracted/org/apache/ibatis/binding/MapperMethodInvoker.class and gradle-extracted/org/apache/ibatis/binding/MapperMethodInvoker.class differ
+Binary files maven-extracted/org/apache/ibatis/binding/MapperProxy$DefaultMethodInvoker.class and gradle-extracted/org/apache/ibatis/binding/MapperProxy$DefaultMethodInvoker.class differ
+Binary files maven-extracted/org/apache/ibatis/binding/MapperProxy$PlainMethodInvoker.class and gradle-extracted/org/apache/ibatis/binding/MapperProxy$PlainMethodInvoker.class differ
+Binary files maven-extracted/org/apache/ibatis/binding/MapperProxy.class and gradle-extracted/org/apache/ibatis/binding/MapperProxy.class differ
+Binary files maven-extracted/org/apache/ibatis/binding/MapperProxyFactory.class and gradle-extracted/org/apache/ibatis/binding/MapperProxyFactory.class differ
+Binary files maven-extracted/org/apache/ibatis/binding/MapperRegistry.class and gradle-extracted/org/apache/ibatis/binding/MapperRegistry.class differ
+Only in maven-extracted/org/apache/ibatis/binding: package-info.class
+Binary files maven-extracted/org/apache/ibatis/builder/BaseBuilder.class and gradle-extracted/org/apache/ibatis/builder/BaseBuilder.class differ
+Binary files maven-extracted/org/apache/ibatis/builder/BuilderException.class and gradle-extracted/org/apache/ibatis/builder/BuilderException.class differ
+Binary files maven-extracted/org/apache/ibatis/builder/CacheRefResolver.class and gradle-extracted/org/apache/ibatis/builder/CacheRefResolver.class differ
+Binary files maven-extracted/org/apache/ibatis/builder/IncompleteElementException.class and gradle-extracted/org/apache/ibatis/builder/IncompleteElementException.class differ
+Binary files maven-extracted/org/apache/ibatis/builder/InitializingObject.class and gradle-extracted/org/apache/ibatis/builder/InitializingObject.class differ
+Binary files maven-extracted/org/apache/ibatis/builder/MapperBuilderAssistant.class and gradle-extracted/org/apache/ibatis/builder/MapperBuilderAssistant.class differ
+Binary files maven-extracted/org/apache/ibatis/builder/ParameterExpression.class and gradle-extracted/org/apache/ibatis/builder/ParameterExpression.class differ
+Binary files maven-extracted/org/apache/ibatis/builder/ParameterMappingTokenHandler.class and gradle-extracted/org/apache/ibatis/builder/ParameterMappingTokenHandler.class differ
+Binary files maven-extracted/org/apache/ibatis/builder/ResultMapResolver.class and gradle-extracted/org/apache/ibatis/builder/ResultMapResolver.class differ
+Binary files maven-extracted/org/apache/ibatis/builder/ResultMappingConstructorResolver$ConstructorArg.class and gradle-extracted/org/apache/ibatis/builder/ResultMappingConstructorResolver$ConstructorArg.class differ
+Binary files maven-extracted/org/apache/ibatis/builder/ResultMappingConstructorResolver$ConstructorMetaInfo.class and gradle-extracted/org/apache/ibatis/builder/ResultMappingConstructorResolver$ConstructorMetaInfo.class differ
+Binary files maven-extracted/org/apache/ibatis/builder/ResultMappingConstructorResolver.class and gradle-extracted/org/apache/ibatis/builder/ResultMappingConstructorResolver.class differ
+Binary files maven-extracted/org/apache/ibatis/builder/SqlSourceBuilder.class and gradle-extracted/org/apache/ibatis/builder/SqlSourceBuilder.class differ
+Binary files maven-extracted/org/apache/ibatis/builder/StaticSqlSource.class and gradle-extracted/org/apache/ibatis/builder/StaticSqlSource.class differ
+Binary files maven-extracted/org/apache/ibatis/builder/annotation/MapperAnnotationBuilder$AnnotationWrapper.class and gradle-extracted/org/apache/ibatis/builder/annotation/MapperAnnotationBuilder$AnnotationWrapper.class differ
+Binary files maven-extracted/org/apache/ibatis/builder/annotation/MapperAnnotationBuilder.class and gradle-extracted/org/apache/ibatis/builder/annotation/MapperAnnotationBuilder.class differ
+Binary files maven-extracted/org/apache/ibatis/builder/annotation/MethodResolver.class and gradle-extracted/org/apache/ibatis/builder/annotation/MethodResolver.class differ
+Binary files maven-extracted/org/apache/ibatis/builder/annotation/ProviderContext.class and gradle-extracted/org/apache/ibatis/builder/annotation/ProviderContext.class differ
+Binary files maven-extracted/org/apache/ibatis/builder/annotation/ProviderMethodResolver.class and gradle-extracted/org/apache/ibatis/builder/annotation/ProviderMethodResolver.class differ
+Binary files maven-extracted/org/apache/ibatis/builder/annotation/ProviderSqlSource.class and gradle-extracted/org/apache/ibatis/builder/annotation/ProviderSqlSource.class differ
+Only in maven-extracted/org/apache/ibatis/builder/annotation: package-info.class
+Only in maven-extracted/org/apache/ibatis/builder: package-info.class
+Binary files maven-extracted/org/apache/ibatis/builder/xml/XMLConfigBuilder.class and gradle-extracted/org/apache/ibatis/builder/xml/XMLConfigBuilder.class differ
+Binary files maven-extracted/org/apache/ibatis/builder/xml/XMLIncludeTransformer.class and gradle-extracted/org/apache/ibatis/builder/xml/XMLIncludeTransformer.class differ
+Binary files maven-extracted/org/apache/ibatis/builder/xml/XMLMapperBuilder.class and gradle-extracted/org/apache/ibatis/builder/xml/XMLMapperBuilder.class differ
+Binary files maven-extracted/org/apache/ibatis/builder/xml/XMLMapperEntityResolver.class and gradle-extracted/org/apache/ibatis/builder/xml/XMLMapperEntityResolver.class differ
+Binary files maven-extracted/org/apache/ibatis/builder/xml/XMLStatementBuilder.class and gradle-extracted/org/apache/ibatis/builder/xml/XMLStatementBuilder.class differ
+Only in maven-extracted/org/apache/ibatis/builder/xml: package-info.class
+Binary files maven-extracted/org/apache/ibatis/cache/Cache.class and gradle-extracted/org/apache/ibatis/cache/Cache.class differ
+Binary files maven-extracted/org/apache/ibatis/cache/CacheException.class and gradle-extracted/org/apache/ibatis/cache/CacheException.class differ
+Binary files maven-extracted/org/apache/ibatis/cache/CacheKey$1.class and gradle-extracted/org/apache/ibatis/cache/CacheKey$1.class differ
+Binary files maven-extracted/org/apache/ibatis/cache/CacheKey.class and gradle-extracted/org/apache/ibatis/cache/CacheKey.class differ
+Binary files maven-extracted/org/apache/ibatis/cache/NullCacheKey.class and gradle-extracted/org/apache/ibatis/cache/NullCacheKey.class differ
+Binary files maven-extracted/org/apache/ibatis/cache/TransactionalCacheManager.class and gradle-extracted/org/apache/ibatis/cache/TransactionalCacheManager.class differ
+Binary files maven-extracted/org/apache/ibatis/cache/decorators/BlockingCache.class and gradle-extracted/org/apache/ibatis/cache/decorators/BlockingCache.class differ
+Binary files maven-extracted/org/apache/ibatis/cache/decorators/FifoCache.class and gradle-extracted/org/apache/ibatis/cache/decorators/FifoCache.class differ
+Binary files maven-extracted/org/apache/ibatis/cache/decorators/LoggingCache.class and gradle-extracted/org/apache/ibatis/cache/decorators/LoggingCache.class differ
+Binary files maven-extracted/org/apache/ibatis/cache/decorators/LruCache$1.class and gradle-extracted/org/apache/ibatis/cache/decorators/LruCache$1.class differ
+Binary files maven-extracted/org/apache/ibatis/cache/decorators/LruCache.class and gradle-extracted/org/apache/ibatis/cache/decorators/LruCache.class differ
+Binary files maven-extracted/org/apache/ibatis/cache/decorators/ScheduledCache.class and gradle-extracted/org/apache/ibatis/cache/decorators/ScheduledCache.class differ
+Binary files maven-extracted/org/apache/ibatis/cache/decorators/SerializedCache$CustomObjectInputStream.class and gradle-extracted/org/apache/ibatis/cache/decorators/SerializedCache$CustomObjectInputStream.class differ
+Binary files maven-extracted/org/apache/ibatis/cache/decorators/SerializedCache.class and gradle-extracted/org/apache/ibatis/cache/decorators/SerializedCache.class differ
+Binary files maven-extracted/org/apache/ibatis/cache/decorators/SoftCache$SoftEntry.class and gradle-extracted/org/apache/ibatis/cache/decorators/SoftCache$SoftEntry.class differ
+Binary files maven-extracted/org/apache/ibatis/cache/decorators/SoftCache.class and gradle-extracted/org/apache/ibatis/cache/decorators/SoftCache.class differ
+Binary files maven-extracted/org/apache/ibatis/cache/decorators/SynchronizedCache.class and gradle-extracted/org/apache/ibatis/cache/decorators/SynchronizedCache.class differ
+Binary files maven-extracted/org/apache/ibatis/cache/decorators/TransactionalCache.class and gradle-extracted/org/apache/ibatis/cache/decorators/TransactionalCache.class differ
+Binary files maven-extracted/org/apache/ibatis/cache/decorators/WeakCache$WeakEntry.class and gradle-extracted/org/apache/ibatis/cache/decorators/WeakCache$WeakEntry.class differ
+Binary files maven-extracted/org/apache/ibatis/cache/decorators/WeakCache.class and gradle-extracted/org/apache/ibatis/cache/decorators/WeakCache.class differ
+Only in maven-extracted/org/apache/ibatis/cache/decorators: package-info.class
+Binary files maven-extracted/org/apache/ibatis/cache/impl/PerpetualCache.class and gradle-extracted/org/apache/ibatis/cache/impl/PerpetualCache.class differ
+Only in maven-extracted/org/apache/ibatis/cache/impl: package-info.class
+Only in maven-extracted/org/apache/ibatis/cache: package-info.class
+Binary files maven-extracted/org/apache/ibatis/cursor/Cursor.class and gradle-extracted/org/apache/ibatis/cursor/Cursor.class differ
+Binary files maven-extracted/org/apache/ibatis/cursor/defaults/DefaultCursor$CursorIterator.class and gradle-extracted/org/apache/ibatis/cursor/defaults/DefaultCursor$CursorIterator.class differ
+Binary files maven-extracted/org/apache/ibatis/cursor/defaults/DefaultCursor$CursorStatus.class and gradle-extracted/org/apache/ibatis/cursor/defaults/DefaultCursor$CursorStatus.class differ
+Binary files maven-extracted/org/apache/ibatis/cursor/defaults/DefaultCursor$ObjectWrapperResultHandler.class and gradle-extracted/org/apache/ibatis/cursor/defaults/DefaultCursor$ObjectWrapperResultHandler.class differ
+Binary files maven-extracted/org/apache/ibatis/cursor/defaults/DefaultCursor.class and gradle-extracted/org/apache/ibatis/cursor/defaults/DefaultCursor.class differ
+Only in maven-extracted/org/apache/ibatis/cursor/defaults: package-info.class
+Only in maven-extracted/org/apache/ibatis/cursor: package-info.class
+Binary files maven-extracted/org/apache/ibatis/datasource/DataSourceException.class and gradle-extracted/org/apache/ibatis/datasource/DataSourceException.class differ
+Binary files maven-extracted/org/apache/ibatis/datasource/DataSourceFactory.class and gradle-extracted/org/apache/ibatis/datasource/DataSourceFactory.class differ
+Binary files maven-extracted/org/apache/ibatis/datasource/jndi/JndiDataSourceFactory.class and gradle-extracted/org/apache/ibatis/datasource/jndi/JndiDataSourceFactory.class differ
+Only in maven-extracted/org/apache/ibatis/datasource/jndi: package-info.class
+Only in maven-extracted/org/apache/ibatis/datasource: package-info.class
+Binary files maven-extracted/org/apache/ibatis/datasource/pooled/PoolState.class and gradle-extracted/org/apache/ibatis/datasource/pooled/PoolState.class differ
+Binary files maven-extracted/org/apache/ibatis/datasource/pooled/PooledConnection.class and gradle-extracted/org/apache/ibatis/datasource/pooled/PooledConnection.class differ
+Binary files maven-extracted/org/apache/ibatis/datasource/pooled/PooledDataSource.class and gradle-extracted/org/apache/ibatis/datasource/pooled/PooledDataSource.class differ
+Binary files maven-extracted/org/apache/ibatis/datasource/pooled/PooledDataSourceFactory.class and gradle-extracted/org/apache/ibatis/datasource/pooled/PooledDataSourceFactory.class differ
+Only in maven-extracted/org/apache/ibatis/datasource/pooled: package-info.class
+Binary files maven-extracted/org/apache/ibatis/datasource/unpooled/UnpooledDataSource$DriverProxy.class and gradle-extracted/org/apache/ibatis/datasource/unpooled/UnpooledDataSource$DriverProxy.class differ
+Binary files maven-extracted/org/apache/ibatis/datasource/unpooled/UnpooledDataSource.class and gradle-extracted/org/apache/ibatis/datasource/unpooled/UnpooledDataSource.class differ
+Binary files maven-extracted/org/apache/ibatis/datasource/unpooled/UnpooledDataSourceFactory.class and gradle-extracted/org/apache/ibatis/datasource/unpooled/UnpooledDataSourceFactory.class differ
+Only in maven-extracted/org/apache/ibatis/datasource/unpooled: package-info.class
+Binary files maven-extracted/org/apache/ibatis/exceptions/ExceptionFactory.class and gradle-extracted/org/apache/ibatis/exceptions/ExceptionFactory.class differ
+Binary files maven-extracted/org/apache/ibatis/exceptions/IbatisException.class and gradle-extracted/org/apache/ibatis/exceptions/IbatisException.class differ
+Binary files maven-extracted/org/apache/ibatis/exceptions/PersistenceException.class and gradle-extracted/org/apache/ibatis/exceptions/PersistenceException.class differ
+Binary files maven-extracted/org/apache/ibatis/exceptions/TooManyResultsException.class and gradle-extracted/org/apache/ibatis/exceptions/TooManyResultsException.class differ
+Only in maven-extracted/org/apache/ibatis/exceptions: package-info.class
+Binary files maven-extracted/org/apache/ibatis/executor/BaseExecutor$DeferredLoad.class and gradle-extracted/org/apache/ibatis/executor/BaseExecutor$DeferredLoad.class differ
+Binary files maven-extracted/org/apache/ibatis/executor/BaseExecutor.class and gradle-extracted/org/apache/ibatis/executor/BaseExecutor.class differ
+Binary files maven-extracted/org/apache/ibatis/executor/BatchExecutor.class and gradle-extracted/org/apache/ibatis/executor/BatchExecutor.class differ
+Binary files maven-extracted/org/apache/ibatis/executor/BatchExecutorException.class and gradle-extracted/org/apache/ibatis/executor/BatchExecutorException.class differ
+Binary files maven-extracted/org/apache/ibatis/executor/BatchResult.class and gradle-extracted/org/apache/ibatis/executor/BatchResult.class differ
+Binary files maven-extracted/org/apache/ibatis/executor/CachingExecutor.class and gradle-extracted/org/apache/ibatis/executor/CachingExecutor.class differ
+Binary files maven-extracted/org/apache/ibatis/executor/ErrorContext.class and gradle-extracted/org/apache/ibatis/executor/ErrorContext.class differ
+Binary files maven-extracted/org/apache/ibatis/executor/ExecutionPlaceholder.class and gradle-extracted/org/apache/ibatis/executor/ExecutionPlaceholder.class differ
+Binary files maven-extracted/org/apache/ibatis/executor/Executor.class and gradle-extracted/org/apache/ibatis/executor/Executor.class differ
+Binary files maven-extracted/org/apache/ibatis/executor/ExecutorException.class and gradle-extracted/org/apache/ibatis/executor/ExecutorException.class differ
+Binary files maven-extracted/org/apache/ibatis/executor/ResultExtractor.class and gradle-extracted/org/apache/ibatis/executor/ResultExtractor.class differ
+Binary files maven-extracted/org/apache/ibatis/executor/ReuseExecutor.class and gradle-extracted/org/apache/ibatis/executor/ReuseExecutor.class differ
+Binary files maven-extracted/org/apache/ibatis/executor/SimpleExecutor.class and gradle-extracted/org/apache/ibatis/executor/SimpleExecutor.class differ
+Binary files maven-extracted/org/apache/ibatis/executor/keygen/Jdbc3KeyGenerator$KeyAssigner.class and gradle-extracted/org/apache/ibatis/executor/keygen/Jdbc3KeyGenerator$KeyAssigner.class differ
+Binary files maven-extracted/org/apache/ibatis/executor/keygen/Jdbc3KeyGenerator.class and gradle-extracted/org/apache/ibatis/executor/keygen/Jdbc3KeyGenerator.class differ
+Binary files maven-extracted/org/apache/ibatis/executor/keygen/KeyGenerator.class and gradle-extracted/org/apache/ibatis/executor/keygen/KeyGenerator.class differ
+Binary files maven-extracted/org/apache/ibatis/executor/keygen/NoKeyGenerator.class and gradle-extracted/org/apache/ibatis/executor/keygen/NoKeyGenerator.class differ
+Binary files maven-extracted/org/apache/ibatis/executor/keygen/SelectKeyGenerator.class and gradle-extracted/org/apache/ibatis/executor/keygen/SelectKeyGenerator.class differ
+Only in maven-extracted/org/apache/ibatis/executor/keygen: package-info.class
+Binary files maven-extracted/org/apache/ibatis/executor/loader/AbstractEnhancedDeserializationProxy.class and gradle-extracted/org/apache/ibatis/executor/loader/AbstractEnhancedDeserializationProxy.class differ
+Binary files maven-extracted/org/apache/ibatis/executor/loader/AbstractSerialStateHolder.class and gradle-extracted/org/apache/ibatis/executor/loader/AbstractSerialStateHolder.class differ
+Binary files maven-extracted/org/apache/ibatis/executor/loader/CglibProxyFactory.class and gradle-extracted/org/apache/ibatis/executor/loader/CglibProxyFactory.class differ
+Binary files maven-extracted/org/apache/ibatis/executor/loader/JavassistProxyFactory.class and gradle-extracted/org/apache/ibatis/executor/loader/JavassistProxyFactory.class differ
+Binary files maven-extracted/org/apache/ibatis/executor/loader/ProxyFactory.class and gradle-extracted/org/apache/ibatis/executor/loader/ProxyFactory.class differ
+Binary files maven-extracted/org/apache/ibatis/executor/loader/ResultLoader.class and gradle-extracted/org/apache/ibatis/executor/loader/ResultLoader.class differ
+Binary files maven-extracted/org/apache/ibatis/executor/loader/ResultLoaderMap$ClosedExecutor.class and gradle-extracted/org/apache/ibatis/executor/loader/ResultLoaderMap$ClosedExecutor.class differ
+Binary files maven-extracted/org/apache/ibatis/executor/loader/ResultLoaderMap$LoadPair.class and gradle-extracted/org/apache/ibatis/executor/loader/ResultLoaderMap$LoadPair.class differ
+Binary files maven-extracted/org/apache/ibatis/executor/loader/ResultLoaderMap.class and gradle-extracted/org/apache/ibatis/executor/loader/ResultLoaderMap.class differ
+Binary files maven-extracted/org/apache/ibatis/executor/loader/WriteReplaceInterface.class and gradle-extracted/org/apache/ibatis/executor/loader/WriteReplaceInterface.class differ
+Binary files maven-extracted/org/apache/ibatis/executor/loader/cglib/CglibProxyFactory$EnhancedDeserializationProxyImpl.class and gradle-extracted/org/apache/ibatis/executor/loader/cglib/CglibProxyFactory$EnhancedDeserializationProxyImpl.class differ
+Binary files maven-extracted/org/apache/ibatis/executor/loader/cglib/CglibProxyFactory$EnhancedResultObjectProxyImpl.class and gradle-extracted/org/apache/ibatis/executor/loader/cglib/CglibProxyFactory$EnhancedResultObjectProxyImpl.class differ
+Binary files maven-extracted/org/apache/ibatis/executor/loader/cglib/CglibProxyFactory$LogHolder.class and gradle-extracted/org/apache/ibatis/executor/loader/cglib/CglibProxyFactory$LogHolder.class differ
+Binary files maven-extracted/org/apache/ibatis/executor/loader/cglib/CglibProxyFactory.class and gradle-extracted/org/apache/ibatis/executor/loader/cglib/CglibProxyFactory.class differ
+Binary files maven-extracted/org/apache/ibatis/executor/loader/cglib/CglibSerialStateHolder.class and gradle-extracted/org/apache/ibatis/executor/loader/cglib/CglibSerialStateHolder.class differ
+Only in maven-extracted/org/apache/ibatis/executor/loader/cglib: package-info.class
+Binary files maven-extracted/org/apache/ibatis/executor/loader/javassist/JavassistProxyFactory$EnhancedDeserializationProxyImpl.class and gradle-extracted/org/apache/ibatis/executor/loader/javassist/JavassistProxyFactory$EnhancedDeserializationProxyImpl.class differ
+Binary files maven-extracted/org/apache/ibatis/executor/loader/javassist/JavassistProxyFactory$EnhancedResultObjectProxyImpl.class and gradle-extracted/org/apache/ibatis/executor/loader/javassist/JavassistProxyFactory$EnhancedResultObjectProxyImpl.class differ
+Binary files maven-extracted/org/apache/ibatis/executor/loader/javassist/JavassistProxyFactory$LogHolder.class and gradle-extracted/org/apache/ibatis/executor/loader/javassist/JavassistProxyFactory$LogHolder.class differ
+Binary files maven-extracted/org/apache/ibatis/executor/loader/javassist/JavassistProxyFactory.class and gradle-extracted/org/apache/ibatis/executor/loader/javassist/JavassistProxyFactory.class differ
+Binary files maven-extracted/org/apache/ibatis/executor/loader/javassist/JavassistSerialStateHolder.class and gradle-extracted/org/apache/ibatis/executor/loader/javassist/JavassistSerialStateHolder.class differ
+Only in maven-extracted/org/apache/ibatis/executor/loader/javassist: package-info.class
+Only in maven-extracted/org/apache/ibatis/executor/loader: package-info.class
+Only in maven-extracted/org/apache/ibatis/executor: package-info.class
+Binary files maven-extracted/org/apache/ibatis/executor/parameter/ParameterHandler.class and gradle-extracted/org/apache/ibatis/executor/parameter/ParameterHandler.class differ
+Only in maven-extracted/org/apache/ibatis/executor/parameter: package-info.class
+Binary files maven-extracted/org/apache/ibatis/executor/result/DefaultMapResultHandler.class and gradle-extracted/org/apache/ibatis/executor/result/DefaultMapResultHandler.class differ
+Binary files maven-extracted/org/apache/ibatis/executor/result/DefaultResultContext.class and gradle-extracted/org/apache/ibatis/executor/result/DefaultResultContext.class differ
+Binary files maven-extracted/org/apache/ibatis/executor/result/DefaultResultHandler.class and gradle-extracted/org/apache/ibatis/executor/result/DefaultResultHandler.class differ
+Binary files maven-extracted/org/apache/ibatis/executor/result/ResultMapException.class and gradle-extracted/org/apache/ibatis/executor/result/ResultMapException.class differ
+Only in maven-extracted/org/apache/ibatis/executor/result: package-info.class
+Binary files maven-extracted/org/apache/ibatis/executor/resultset/DefaultResultSetHandler$PendingRelation.class and gradle-extracted/org/apache/ibatis/executor/resultset/DefaultResultSetHandler$PendingRelation.class differ
+Binary files maven-extracted/org/apache/ibatis/executor/resultset/DefaultResultSetHandler$UnMappedColumnAutoMapping.class and gradle-extracted/org/apache/ibatis/executor/resultset/DefaultResultSetHandler$UnMappedColumnAutoMapping.class differ
+Binary files maven-extracted/org/apache/ibatis/executor/resultset/DefaultResultSetHandler.class and gradle-extracted/org/apache/ibatis/executor/resultset/DefaultResultSetHandler.class differ
+Binary files maven-extracted/org/apache/ibatis/executor/resultset/PendingConstructorCreation.class and gradle-extracted/org/apache/ibatis/executor/resultset/PendingConstructorCreation.class differ
+Binary files maven-extracted/org/apache/ibatis/executor/resultset/PendingCreationKey.class and gradle-extracted/org/apache/ibatis/executor/resultset/PendingCreationKey.class differ
+Binary files maven-extracted/org/apache/ibatis/executor/resultset/PendingCreationMetaInfo.class and gradle-extracted/org/apache/ibatis/executor/resultset/PendingCreationMetaInfo.class differ
+Binary files maven-extracted/org/apache/ibatis/executor/resultset/ResultSetHandler.class and gradle-extracted/org/apache/ibatis/executor/resultset/ResultSetHandler.class differ
+Binary files maven-extracted/org/apache/ibatis/executor/resultset/ResultSetWrapper.class and gradle-extracted/org/apache/ibatis/executor/resultset/ResultSetWrapper.class differ
+Only in maven-extracted/org/apache/ibatis/executor/resultset: package-info.class
+Binary files maven-extracted/org/apache/ibatis/executor/statement/BaseStatementHandler.class and gradle-extracted/org/apache/ibatis/executor/statement/BaseStatementHandler.class differ
+Binary files maven-extracted/org/apache/ibatis/executor/statement/CallableStatementHandler.class and gradle-extracted/org/apache/ibatis/executor/statement/CallableStatementHandler.class differ
+Binary files maven-extracted/org/apache/ibatis/executor/statement/PreparedStatementHandler.class and gradle-extracted/org/apache/ibatis/executor/statement/PreparedStatementHandler.class differ
+Binary files maven-extracted/org/apache/ibatis/executor/statement/RoutingStatementHandler$1.class and gradle-extracted/org/apache/ibatis/executor/statement/RoutingStatementHandler$1.class differ
+Binary files maven-extracted/org/apache/ibatis/executor/statement/RoutingStatementHandler.class and gradle-extracted/org/apache/ibatis/executor/statement/RoutingStatementHandler.class differ
+Binary files maven-extracted/org/apache/ibatis/executor/statement/SimpleStatementHandler.class and gradle-extracted/org/apache/ibatis/executor/statement/SimpleStatementHandler.class differ
+Binary files maven-extracted/org/apache/ibatis/executor/statement/StatementHandler.class and gradle-extracted/org/apache/ibatis/executor/statement/StatementHandler.class differ
+Binary files maven-extracted/org/apache/ibatis/executor/statement/StatementUtil.class and gradle-extracted/org/apache/ibatis/executor/statement/StatementUtil.class differ
+Only in maven-extracted/org/apache/ibatis/executor/statement: package-info.class
+Binary files maven-extracted/org/apache/ibatis/io/ClassLoaderWrapper.class and gradle-extracted/org/apache/ibatis/io/ClassLoaderWrapper.class differ
+Binary files maven-extracted/org/apache/ibatis/io/DefaultVFS.class and gradle-extracted/org/apache/ibatis/io/DefaultVFS.class differ
+Binary files maven-extracted/org/apache/ibatis/io/ExternalResources.class and gradle-extracted/org/apache/ibatis/io/ExternalResources.class differ
+Binary files maven-extracted/org/apache/ibatis/io/JBoss6VFS$VFS.class and gradle-extracted/org/apache/ibatis/io/JBoss6VFS$VFS.class differ
+Binary files maven-extracted/org/apache/ibatis/io/JBoss6VFS$VirtualFile.class and gradle-extracted/org/apache/ibatis/io/JBoss6VFS$VirtualFile.class differ
+Binary files maven-extracted/org/apache/ibatis/io/JBoss6VFS.class and gradle-extracted/org/apache/ibatis/io/JBoss6VFS.class differ
+Binary files maven-extracted/org/apache/ibatis/io/ResolverUtil$AnnotatedWith.class and gradle-extracted/org/apache/ibatis/io/ResolverUtil$AnnotatedWith.class differ
+Binary files maven-extracted/org/apache/ibatis/io/ResolverUtil$IsA.class and gradle-extracted/org/apache/ibatis/io/ResolverUtil$IsA.class differ
+Binary files maven-extracted/org/apache/ibatis/io/ResolverUtil$Test.class and gradle-extracted/org/apache/ibatis/io/ResolverUtil$Test.class differ
+Binary files maven-extracted/org/apache/ibatis/io/ResolverUtil.class and gradle-extracted/org/apache/ibatis/io/ResolverUtil.class differ
+Binary files maven-extracted/org/apache/ibatis/io/Resources.class and gradle-extracted/org/apache/ibatis/io/Resources.class differ
+Binary files maven-extracted/org/apache/ibatis/io/SerialFilterChecker.class and gradle-extracted/org/apache/ibatis/io/SerialFilterChecker.class differ
+Binary files maven-extracted/org/apache/ibatis/io/VFS$VFSHolder.class and gradle-extracted/org/apache/ibatis/io/VFS$VFSHolder.class differ
+Binary files maven-extracted/org/apache/ibatis/io/VFS.class and gradle-extracted/org/apache/ibatis/io/VFS.class differ
+Only in maven-extracted/org/apache/ibatis/io: package-info.class
+Only in maven-extracted/org/apache/ibatis: javassist
+Binary files maven-extracted/org/apache/ibatis/jdbc/AbstractSQL$1.class and gradle-extracted/org/apache/ibatis/jdbc/AbstractSQL$1.class differ
+Binary files maven-extracted/org/apache/ibatis/jdbc/AbstractSQL$ForEachConsumer.class and gradle-extracted/org/apache/ibatis/jdbc/AbstractSQL$ForEachConsumer.class differ
+Binary files maven-extracted/org/apache/ibatis/jdbc/AbstractSQL$SQLStatement$LimitingRowsStrategy$1.class and gradle-extracted/org/apache/ibatis/jdbc/AbstractSQL$SQLStatement$LimitingRowsStrategy$1.class differ
+Binary files maven-extracted/org/apache/ibatis/jdbc/AbstractSQL$SQLStatement$LimitingRowsStrategy$2.class and gradle-extracted/org/apache/ibatis/jdbc/AbstractSQL$SQLStatement$LimitingRowsStrategy$2.class differ
+Binary files maven-extracted/org/apache/ibatis/jdbc/AbstractSQL$SQLStatement$LimitingRowsStrategy$3.class and gradle-extracted/org/apache/ibatis/jdbc/AbstractSQL$SQLStatement$LimitingRowsStrategy$3.class differ
+Binary files maven-extracted/org/apache/ibatis/jdbc/AbstractSQL$SQLStatement$LimitingRowsStrategy.class and gradle-extracted/org/apache/ibatis/jdbc/AbstractSQL$SQLStatement$LimitingRowsStrategy.class differ
+Binary files maven-extracted/org/apache/ibatis/jdbc/AbstractSQL$SQLStatement$StatementType.class and gradle-extracted/org/apache/ibatis/jdbc/AbstractSQL$SQLStatement$StatementType.class differ
+Binary files maven-extracted/org/apache/ibatis/jdbc/AbstractSQL$SQLStatement.class and gradle-extracted/org/apache/ibatis/jdbc/AbstractSQL$SQLStatement.class differ
+Binary files maven-extracted/org/apache/ibatis/jdbc/AbstractSQL$SafeAppendable.class and gradle-extracted/org/apache/ibatis/jdbc/AbstractSQL$SafeAppendable.class differ
+Binary files maven-extracted/org/apache/ibatis/jdbc/AbstractSQL.class and gradle-extracted/org/apache/ibatis/jdbc/AbstractSQL.class differ
+Binary files maven-extracted/org/apache/ibatis/jdbc/Null.class and gradle-extracted/org/apache/ibatis/jdbc/Null.class differ
+Binary files maven-extracted/org/apache/ibatis/jdbc/RuntimeSqlException.class and gradle-extracted/org/apache/ibatis/jdbc/RuntimeSqlException.class differ
+Binary files maven-extracted/org/apache/ibatis/jdbc/SQL.class and gradle-extracted/org/apache/ibatis/jdbc/SQL.class differ
+Binary files maven-extracted/org/apache/ibatis/jdbc/ScriptRunner.class and gradle-extracted/org/apache/ibatis/jdbc/ScriptRunner.class differ
+Binary files maven-extracted/org/apache/ibatis/jdbc/SelectBuilder.class and gradle-extracted/org/apache/ibatis/jdbc/SelectBuilder.class differ
+Binary files maven-extracted/org/apache/ibatis/jdbc/SqlBuilder.class and gradle-extracted/org/apache/ibatis/jdbc/SqlBuilder.class differ
+Binary files maven-extracted/org/apache/ibatis/jdbc/SqlRunner.class and gradle-extracted/org/apache/ibatis/jdbc/SqlRunner.class differ
+Only in maven-extracted/org/apache/ibatis/jdbc: package-info.class
+Binary files maven-extracted/org/apache/ibatis/logging/Log.class and gradle-extracted/org/apache/ibatis/logging/Log.class differ
+Binary files maven-extracted/org/apache/ibatis/logging/LogException.class and gradle-extracted/org/apache/ibatis/logging/LogException.class differ
+Binary files maven-extracted/org/apache/ibatis/logging/LogFactory.class and gradle-extracted/org/apache/ibatis/logging/LogFactory.class differ
+Binary files maven-extracted/org/apache/ibatis/logging/commons/JakartaCommonsLoggingImpl.class and gradle-extracted/org/apache/ibatis/logging/commons/JakartaCommonsLoggingImpl.class differ
+Only in maven-extracted/org/apache/ibatis/logging/commons: package-info.class
+Binary files maven-extracted/org/apache/ibatis/logging/jdbc/BaseJdbcLogger.class and gradle-extracted/org/apache/ibatis/logging/jdbc/BaseJdbcLogger.class differ
+Binary files maven-extracted/org/apache/ibatis/logging/jdbc/ConnectionLogger.class and gradle-extracted/org/apache/ibatis/logging/jdbc/ConnectionLogger.class differ
+Binary files maven-extracted/org/apache/ibatis/logging/jdbc/PreparedStatementLogger.class and gradle-extracted/org/apache/ibatis/logging/jdbc/PreparedStatementLogger.class differ
+Binary files maven-extracted/org/apache/ibatis/logging/jdbc/ResultSetLogger.class and gradle-extracted/org/apache/ibatis/logging/jdbc/ResultSetLogger.class differ
+Binary files maven-extracted/org/apache/ibatis/logging/jdbc/StatementLogger.class and gradle-extracted/org/apache/ibatis/logging/jdbc/StatementLogger.class differ
+Only in maven-extracted/org/apache/ibatis/logging/jdbc: package-info.class
+Binary files maven-extracted/org/apache/ibatis/logging/jdk14/Jdk14LoggingImpl.class and gradle-extracted/org/apache/ibatis/logging/jdk14/Jdk14LoggingImpl.class differ
+Only in maven-extracted/org/apache/ibatis/logging/jdk14: package-info.class
+Binary files maven-extracted/org/apache/ibatis/logging/log4j/Log4jImpl.class and gradle-extracted/org/apache/ibatis/logging/log4j/Log4jImpl.class differ
+Only in maven-extracted/org/apache/ibatis/logging/log4j: package-info.class
+Binary files maven-extracted/org/apache/ibatis/logging/log4j2/Log4j2AbstractLoggerImpl.class and gradle-extracted/org/apache/ibatis/logging/log4j2/Log4j2AbstractLoggerImpl.class differ
+Binary files maven-extracted/org/apache/ibatis/logging/log4j2/Log4j2Impl.class and gradle-extracted/org/apache/ibatis/logging/log4j2/Log4j2Impl.class differ
+Binary files maven-extracted/org/apache/ibatis/logging/log4j2/Log4j2LoggerImpl.class and gradle-extracted/org/apache/ibatis/logging/log4j2/Log4j2LoggerImpl.class differ
+Only in maven-extracted/org/apache/ibatis/logging/log4j2: package-info.class
+Binary files maven-extracted/org/apache/ibatis/logging/nologging/NoLoggingImpl.class and gradle-extracted/org/apache/ibatis/logging/nologging/NoLoggingImpl.class differ
+Only in maven-extracted/org/apache/ibatis/logging/nologging: package-info.class
+Only in maven-extracted/org/apache/ibatis/logging: package-info.class
+Binary files maven-extracted/org/apache/ibatis/logging/slf4j/Slf4jImpl.class and gradle-extracted/org/apache/ibatis/logging/slf4j/Slf4jImpl.class differ
+Binary files maven-extracted/org/apache/ibatis/logging/slf4j/Slf4jLocationAwareLoggerImpl.class and gradle-extracted/org/apache/ibatis/logging/slf4j/Slf4jLocationAwareLoggerImpl.class differ
+Binary files maven-extracted/org/apache/ibatis/logging/slf4j/Slf4jLoggerImpl.class and gradle-extracted/org/apache/ibatis/logging/slf4j/Slf4jLoggerImpl.class differ
+Only in maven-extracted/org/apache/ibatis/logging/slf4j: package-info.class
+Binary files maven-extracted/org/apache/ibatis/logging/stdout/StdOutImpl.class and gradle-extracted/org/apache/ibatis/logging/stdout/StdOutImpl.class differ
+Only in maven-extracted/org/apache/ibatis/logging/stdout: package-info.class
+Binary files maven-extracted/org/apache/ibatis/mapping/BoundSql.class and gradle-extracted/org/apache/ibatis/mapping/BoundSql.class differ
+Binary files maven-extracted/org/apache/ibatis/mapping/CacheBuilder.class and gradle-extracted/org/apache/ibatis/mapping/CacheBuilder.class differ
+Binary files maven-extracted/org/apache/ibatis/mapping/DatabaseIdProvider.class and gradle-extracted/org/apache/ibatis/mapping/DatabaseIdProvider.class differ
+Binary files maven-extracted/org/apache/ibatis/mapping/DefaultDatabaseIdProvider.class and gradle-extracted/org/apache/ibatis/mapping/DefaultDatabaseIdProvider.class differ
+Binary files maven-extracted/org/apache/ibatis/mapping/Discriminator$Builder.class and gradle-extracted/org/apache/ibatis/mapping/Discriminator$Builder.class differ
+Binary files maven-extracted/org/apache/ibatis/mapping/Discriminator.class and gradle-extracted/org/apache/ibatis/mapping/Discriminator.class differ
+Binary files maven-extracted/org/apache/ibatis/mapping/Environment$Builder.class and gradle-extracted/org/apache/ibatis/mapping/Environment$Builder.class differ
+Binary files maven-extracted/org/apache/ibatis/mapping/Environment.class and gradle-extracted/org/apache/ibatis/mapping/Environment.class differ
+Binary files maven-extracted/org/apache/ibatis/mapping/FetchType.class and gradle-extracted/org/apache/ibatis/mapping/FetchType.class differ
+Binary files maven-extracted/org/apache/ibatis/mapping/MappedStatement$Builder.class and gradle-extracted/org/apache/ibatis/mapping/MappedStatement$Builder.class differ
+Binary files maven-extracted/org/apache/ibatis/mapping/MappedStatement.class and gradle-extracted/org/apache/ibatis/mapping/MappedStatement.class differ
+Binary files maven-extracted/org/apache/ibatis/mapping/ParameterMap$Builder.class and gradle-extracted/org/apache/ibatis/mapping/ParameterMap$Builder.class differ
+Binary files maven-extracted/org/apache/ibatis/mapping/ParameterMap.class and gradle-extracted/org/apache/ibatis/mapping/ParameterMap.class differ
+Binary files maven-extracted/org/apache/ibatis/mapping/ParameterMapping$Builder.class and gradle-extracted/org/apache/ibatis/mapping/ParameterMapping$Builder.class differ
+Binary files maven-extracted/org/apache/ibatis/mapping/ParameterMapping.class and gradle-extracted/org/apache/ibatis/mapping/ParameterMapping.class differ
+Binary files maven-extracted/org/apache/ibatis/mapping/ParameterMode.class and gradle-extracted/org/apache/ibatis/mapping/ParameterMode.class differ
+Binary files maven-extracted/org/apache/ibatis/mapping/ResultFlag.class and gradle-extracted/org/apache/ibatis/mapping/ResultFlag.class differ
+Binary files maven-extracted/org/apache/ibatis/mapping/ResultMap$Builder.class and gradle-extracted/org/apache/ibatis/mapping/ResultMap$Builder.class differ
+Binary files maven-extracted/org/apache/ibatis/mapping/ResultMap.class and gradle-extracted/org/apache/ibatis/mapping/ResultMap.class differ
+Binary files maven-extracted/org/apache/ibatis/mapping/ResultMapping$Builder.class and gradle-extracted/org/apache/ibatis/mapping/ResultMapping$Builder.class differ
+Binary files maven-extracted/org/apache/ibatis/mapping/ResultMapping.class and gradle-extracted/org/apache/ibatis/mapping/ResultMapping.class differ
+Binary files maven-extracted/org/apache/ibatis/mapping/ResultSetType.class and gradle-extracted/org/apache/ibatis/mapping/ResultSetType.class differ
+Binary files maven-extracted/org/apache/ibatis/mapping/SqlCommandType.class and gradle-extracted/org/apache/ibatis/mapping/SqlCommandType.class differ
+Binary files maven-extracted/org/apache/ibatis/mapping/SqlSource.class and gradle-extracted/org/apache/ibatis/mapping/SqlSource.class differ
+Binary files maven-extracted/org/apache/ibatis/mapping/StatementType.class and gradle-extracted/org/apache/ibatis/mapping/StatementType.class differ
+Binary files maven-extracted/org/apache/ibatis/mapping/VendorDatabaseIdProvider.class and gradle-extracted/org/apache/ibatis/mapping/VendorDatabaseIdProvider.class differ
+Only in maven-extracted/org/apache/ibatis/mapping: package-info.class
+Only in maven-extracted/org/apache/ibatis: ognl
+Only in maven-extracted/org/apache/ibatis: package-info.class
+Binary files maven-extracted/org/apache/ibatis/parsing/GenericTokenParser.class and gradle-extracted/org/apache/ibatis/parsing/GenericTokenParser.class differ
+Binary files maven-extracted/org/apache/ibatis/parsing/ParsingException.class and gradle-extracted/org/apache/ibatis/parsing/ParsingException.class differ
+Binary files maven-extracted/org/apache/ibatis/parsing/PropertyParser$VariableTokenHandler.class and gradle-extracted/org/apache/ibatis/parsing/PropertyParser$VariableTokenHandler.class differ
+Binary files maven-extracted/org/apache/ibatis/parsing/PropertyParser.class and gradle-extracted/org/apache/ibatis/parsing/PropertyParser.class differ
+Binary files maven-extracted/org/apache/ibatis/parsing/TokenHandler.class and gradle-extracted/org/apache/ibatis/parsing/TokenHandler.class differ
+Binary files maven-extracted/org/apache/ibatis/parsing/XNode.class and gradle-extracted/org/apache/ibatis/parsing/XNode.class differ
+Binary files maven-extracted/org/apache/ibatis/parsing/XPathParser$1.class and gradle-extracted/org/apache/ibatis/parsing/XPathParser$1.class differ
+Binary files maven-extracted/org/apache/ibatis/parsing/XPathParser.class and gradle-extracted/org/apache/ibatis/parsing/XPathParser.class differ
+Only in maven-extracted/org/apache/ibatis/parsing: package-info.class
+Binary files maven-extracted/org/apache/ibatis/plugin/Interceptor.class and gradle-extracted/org/apache/ibatis/plugin/Interceptor.class differ
+Binary files maven-extracted/org/apache/ibatis/plugin/InterceptorChain.class and gradle-extracted/org/apache/ibatis/plugin/InterceptorChain.class differ
+Binary files maven-extracted/org/apache/ibatis/plugin/Intercepts.class and gradle-extracted/org/apache/ibatis/plugin/Intercepts.class differ
+Binary files maven-extracted/org/apache/ibatis/plugin/Invocation.class and gradle-extracted/org/apache/ibatis/plugin/Invocation.class differ
+Binary files maven-extracted/org/apache/ibatis/plugin/Plugin.class and gradle-extracted/org/apache/ibatis/plugin/Plugin.class differ
+Binary files maven-extracted/org/apache/ibatis/plugin/PluginException.class and gradle-extracted/org/apache/ibatis/plugin/PluginException.class differ
+Binary files maven-extracted/org/apache/ibatis/plugin/Signature.class and gradle-extracted/org/apache/ibatis/plugin/Signature.class differ
+Only in maven-extracted/org/apache/ibatis/plugin: package-info.class
+Binary files maven-extracted/org/apache/ibatis/reflection/ArrayUtil.class and gradle-extracted/org/apache/ibatis/reflection/ArrayUtil.class differ
+Binary files maven-extracted/org/apache/ibatis/reflection/DefaultReflectorFactory.class and gradle-extracted/org/apache/ibatis/reflection/DefaultReflectorFactory.class differ
+Binary files maven-extracted/org/apache/ibatis/reflection/ExceptionUtil.class and gradle-extracted/org/apache/ibatis/reflection/ExceptionUtil.class differ
+Binary files maven-extracted/org/apache/ibatis/reflection/Jdk.class and gradle-extracted/org/apache/ibatis/reflection/Jdk.class differ
+Binary files maven-extracted/org/apache/ibatis/reflection/MetaClass.class and gradle-extracted/org/apache/ibatis/reflection/MetaClass.class differ
+Binary files maven-extracted/org/apache/ibatis/reflection/MetaObject.class and gradle-extracted/org/apache/ibatis/reflection/MetaObject.class differ
+Binary files maven-extracted/org/apache/ibatis/reflection/OptionalUtil.class and gradle-extracted/org/apache/ibatis/reflection/OptionalUtil.class differ
+Binary files maven-extracted/org/apache/ibatis/reflection/ParamNameResolver.class and gradle-extracted/org/apache/ibatis/reflection/ParamNameResolver.class differ
+Binary files maven-extracted/org/apache/ibatis/reflection/ParamNameUtil.class and gradle-extracted/org/apache/ibatis/reflection/ParamNameUtil.class differ
+Binary files maven-extracted/org/apache/ibatis/reflection/ReflectionException.class and gradle-extracted/org/apache/ibatis/reflection/ReflectionException.class differ
+Binary files maven-extracted/org/apache/ibatis/reflection/Reflector.class and gradle-extracted/org/apache/ibatis/reflection/Reflector.class differ
+Binary files maven-extracted/org/apache/ibatis/reflection/ReflectorFactory.class and gradle-extracted/org/apache/ibatis/reflection/ReflectorFactory.class differ
+Binary files maven-extracted/org/apache/ibatis/reflection/SystemMetaObject$NullObject.class and gradle-extracted/org/apache/ibatis/reflection/SystemMetaObject$NullObject.class differ
+Binary files maven-extracted/org/apache/ibatis/reflection/SystemMetaObject.class and gradle-extracted/org/apache/ibatis/reflection/SystemMetaObject.class differ
+Binary files maven-extracted/org/apache/ibatis/reflection/TypeParameterResolver$GenericArrayTypeImpl.class and gradle-extracted/org/apache/ibatis/reflection/TypeParameterResolver$GenericArrayTypeImpl.class differ
+Binary files maven-extracted/org/apache/ibatis/reflection/TypeParameterResolver$ParameterizedTypeImpl.class and gradle-extracted/org/apache/ibatis/reflection/TypeParameterResolver$ParameterizedTypeImpl.class differ
+Binary files maven-extracted/org/apache/ibatis/reflection/TypeParameterResolver$WildcardTypeImpl.class and gradle-extracted/org/apache/ibatis/reflection/TypeParameterResolver$WildcardTypeImpl.class differ
+Binary files maven-extracted/org/apache/ibatis/reflection/TypeParameterResolver.class and gradle-extracted/org/apache/ibatis/reflection/TypeParameterResolver.class differ
+Binary files maven-extracted/org/apache/ibatis/reflection/factory/DefaultObjectFactory.class and gradle-extracted/org/apache/ibatis/reflection/factory/DefaultObjectFactory.class differ
+Binary files maven-extracted/org/apache/ibatis/reflection/factory/ObjectFactory.class and gradle-extracted/org/apache/ibatis/reflection/factory/ObjectFactory.class differ
+Only in maven-extracted/org/apache/ibatis/reflection/factory: package-info.class
+Binary files maven-extracted/org/apache/ibatis/reflection/invoker/AmbiguousMethodInvoker.class and gradle-extracted/org/apache/ibatis/reflection/invoker/AmbiguousMethodInvoker.class differ
+Binary files maven-extracted/org/apache/ibatis/reflection/invoker/GetFieldInvoker.class and gradle-extracted/org/apache/ibatis/reflection/invoker/GetFieldInvoker.class differ
+Binary files maven-extracted/org/apache/ibatis/reflection/invoker/Invoker.class and gradle-extracted/org/apache/ibatis/reflection/invoker/Invoker.class differ
+Binary files maven-extracted/org/apache/ibatis/reflection/invoker/MethodInvoker.class and gradle-extracted/org/apache/ibatis/reflection/invoker/MethodInvoker.class differ
+Binary files maven-extracted/org/apache/ibatis/reflection/invoker/SetFieldInvoker.class and gradle-extracted/org/apache/ibatis/reflection/invoker/SetFieldInvoker.class differ
+Only in maven-extracted/org/apache/ibatis/reflection/invoker: package-info.class
+Only in maven-extracted/org/apache/ibatis/reflection: package-info.class
+Binary files maven-extracted/org/apache/ibatis/reflection/property/PropertyCopier.class and gradle-extracted/org/apache/ibatis/reflection/property/PropertyCopier.class differ
+Binary files maven-extracted/org/apache/ibatis/reflection/property/PropertyNamer.class and gradle-extracted/org/apache/ibatis/reflection/property/PropertyNamer.class differ
+Binary files maven-extracted/org/apache/ibatis/reflection/property/PropertyTokenizer.class and gradle-extracted/org/apache/ibatis/reflection/property/PropertyTokenizer.class differ
+Only in maven-extracted/org/apache/ibatis/reflection/property: package-info.class
+Binary files maven-extracted/org/apache/ibatis/reflection/wrapper/BaseWrapper.class and gradle-extracted/org/apache/ibatis/reflection/wrapper/BaseWrapper.class differ
+Binary files maven-extracted/org/apache/ibatis/reflection/wrapper/BeanWrapper.class and gradle-extracted/org/apache/ibatis/reflection/wrapper/BeanWrapper.class differ
+Binary files maven-extracted/org/apache/ibatis/reflection/wrapper/CollectionWrapper.class and gradle-extracted/org/apache/ibatis/reflection/wrapper/CollectionWrapper.class differ
+Binary files maven-extracted/org/apache/ibatis/reflection/wrapper/DefaultObjectWrapperFactory.class and gradle-extracted/org/apache/ibatis/reflection/wrapper/DefaultObjectWrapperFactory.class differ
+Binary files maven-extracted/org/apache/ibatis/reflection/wrapper/MapWrapper.class and gradle-extracted/org/apache/ibatis/reflection/wrapper/MapWrapper.class differ
+Binary files maven-extracted/org/apache/ibatis/reflection/wrapper/ObjectWrapper.class and gradle-extracted/org/apache/ibatis/reflection/wrapper/ObjectWrapper.class differ
+Binary files maven-extracted/org/apache/ibatis/reflection/wrapper/ObjectWrapperFactory.class and gradle-extracted/org/apache/ibatis/reflection/wrapper/ObjectWrapperFactory.class differ
+Only in maven-extracted/org/apache/ibatis/reflection/wrapper: package-info.class
+Binary files maven-extracted/org/apache/ibatis/scripting/LanguageDriver.class and gradle-extracted/org/apache/ibatis/scripting/LanguageDriver.class differ
+Binary files maven-extracted/org/apache/ibatis/scripting/LanguageDriverRegistry.class and gradle-extracted/org/apache/ibatis/scripting/LanguageDriverRegistry.class differ
+Binary files maven-extracted/org/apache/ibatis/scripting/ScriptingException.class and gradle-extracted/org/apache/ibatis/scripting/ScriptingException.class differ
+Binary files maven-extracted/org/apache/ibatis/scripting/defaults/DefaultParameterHandler$1.class and gradle-extracted/org/apache/ibatis/scripting/defaults/DefaultParameterHandler$1.class differ
+Binary files maven-extracted/org/apache/ibatis/scripting/defaults/DefaultParameterHandler.class and gradle-extracted/org/apache/ibatis/scripting/defaults/DefaultParameterHandler.class differ
+Binary files maven-extracted/org/apache/ibatis/scripting/defaults/RawLanguageDriver.class and gradle-extracted/org/apache/ibatis/scripting/defaults/RawLanguageDriver.class differ
+Binary files maven-extracted/org/apache/ibatis/scripting/defaults/RawSqlSource.class and gradle-extracted/org/apache/ibatis/scripting/defaults/RawSqlSource.class differ
+Only in maven-extracted/org/apache/ibatis/scripting/defaults: package-info.class
+Only in maven-extracted/org/apache/ibatis/scripting: package-info.class
+Binary files maven-extracted/org/apache/ibatis/scripting/xmltags/ChooseSqlNode.class and gradle-extracted/org/apache/ibatis/scripting/xmltags/ChooseSqlNode.class differ
+Binary files maven-extracted/org/apache/ibatis/scripting/xmltags/DynamicContext$ContextAccessor.class and gradle-extracted/org/apache/ibatis/scripting/xmltags/DynamicContext$ContextAccessor.class differ
+Binary files maven-extracted/org/apache/ibatis/scripting/xmltags/DynamicContext$ContextMap.class and gradle-extracted/org/apache/ibatis/scripting/xmltags/DynamicContext$ContextMap.class differ
+Binary files maven-extracted/org/apache/ibatis/scripting/xmltags/DynamicContext.class and gradle-extracted/org/apache/ibatis/scripting/xmltags/DynamicContext.class differ
+Binary files maven-extracted/org/apache/ibatis/scripting/xmltags/DynamicSqlSource.class and gradle-extracted/org/apache/ibatis/scripting/xmltags/DynamicSqlSource.class differ
+Binary files maven-extracted/org/apache/ibatis/scripting/xmltags/ExpressionEvaluator.class and gradle-extracted/org/apache/ibatis/scripting/xmltags/ExpressionEvaluator.class differ
+Binary files maven-extracted/org/apache/ibatis/scripting/xmltags/ForEachSqlNode$PrefixedContext.class and gradle-extracted/org/apache/ibatis/scripting/xmltags/ForEachSqlNode$PrefixedContext.class differ
+Binary files maven-extracted/org/apache/ibatis/scripting/xmltags/ForEachSqlNode.class and gradle-extracted/org/apache/ibatis/scripting/xmltags/ForEachSqlNode.class differ
+Binary files maven-extracted/org/apache/ibatis/scripting/xmltags/IfSqlNode.class and gradle-extracted/org/apache/ibatis/scripting/xmltags/IfSqlNode.class differ
+Binary files maven-extracted/org/apache/ibatis/scripting/xmltags/MixedSqlNode.class and gradle-extracted/org/apache/ibatis/scripting/xmltags/MixedSqlNode.class differ
+Binary files maven-extracted/org/apache/ibatis/scripting/xmltags/OgnlCache.class and gradle-extracted/org/apache/ibatis/scripting/xmltags/OgnlCache.class differ
+Binary files maven-extracted/org/apache/ibatis/scripting/xmltags/OgnlClassResolver.class and gradle-extracted/org/apache/ibatis/scripting/xmltags/OgnlClassResolver.class differ
+Binary files maven-extracted/org/apache/ibatis/scripting/xmltags/OgnlMemberAccess.class and gradle-extracted/org/apache/ibatis/scripting/xmltags/OgnlMemberAccess.class differ
+Binary files maven-extracted/org/apache/ibatis/scripting/xmltags/SetSqlNode.class and gradle-extracted/org/apache/ibatis/scripting/xmltags/SetSqlNode.class differ
+Binary files maven-extracted/org/apache/ibatis/scripting/xmltags/SqlNode.class and gradle-extracted/org/apache/ibatis/scripting/xmltags/SqlNode.class differ
+Binary files maven-extracted/org/apache/ibatis/scripting/xmltags/StaticTextSqlNode.class and gradle-extracted/org/apache/ibatis/scripting/xmltags/StaticTextSqlNode.class differ
+Binary files maven-extracted/org/apache/ibatis/scripting/xmltags/TextSqlNode$BindingTokenParser.class and gradle-extracted/org/apache/ibatis/scripting/xmltags/TextSqlNode$BindingTokenParser.class differ
+Binary files maven-extracted/org/apache/ibatis/scripting/xmltags/TextSqlNode$DynamicCheckerTokenParser.class and gradle-extracted/org/apache/ibatis/scripting/xmltags/TextSqlNode$DynamicCheckerTokenParser.class differ
+Binary files maven-extracted/org/apache/ibatis/scripting/xmltags/TextSqlNode.class and gradle-extracted/org/apache/ibatis/scripting/xmltags/TextSqlNode.class differ
+Binary files maven-extracted/org/apache/ibatis/scripting/xmltags/TrimSqlNode$FilteredDynamicContext.class and gradle-extracted/org/apache/ibatis/scripting/xmltags/TrimSqlNode$FilteredDynamicContext.class differ
+Binary files maven-extracted/org/apache/ibatis/scripting/xmltags/TrimSqlNode.class and gradle-extracted/org/apache/ibatis/scripting/xmltags/TrimSqlNode.class differ
+Binary files maven-extracted/org/apache/ibatis/scripting/xmltags/VarDeclSqlNode.class and gradle-extracted/org/apache/ibatis/scripting/xmltags/VarDeclSqlNode.class differ
+Binary files maven-extracted/org/apache/ibatis/scripting/xmltags/WhereSqlNode.class and gradle-extracted/org/apache/ibatis/scripting/xmltags/WhereSqlNode.class differ
+Binary files maven-extracted/org/apache/ibatis/scripting/xmltags/XMLLanguageDriver.class and gradle-extracted/org/apache/ibatis/scripting/xmltags/XMLLanguageDriver.class differ
+Binary files maven-extracted/org/apache/ibatis/scripting/xmltags/XMLScriptBuilder$BindHandler.class and gradle-extracted/org/apache/ibatis/scripting/xmltags/XMLScriptBuilder$BindHandler.class differ
+Binary files maven-extracted/org/apache/ibatis/scripting/xmltags/XMLScriptBuilder$ChooseHandler.class and gradle-extracted/org/apache/ibatis/scripting/xmltags/XMLScriptBuilder$ChooseHandler.class differ
+Binary files maven-extracted/org/apache/ibatis/scripting/xmltags/XMLScriptBuilder$EmptySqlNode.class and gradle-extracted/org/apache/ibatis/scripting/xmltags/XMLScriptBuilder$EmptySqlNode.class differ
+Binary files maven-extracted/org/apache/ibatis/scripting/xmltags/XMLScriptBuilder$ForEachHandler.class and gradle-extracted/org/apache/ibatis/scripting/xmltags/XMLScriptBuilder$ForEachHandler.class differ
+Binary files maven-extracted/org/apache/ibatis/scripting/xmltags/XMLScriptBuilder$IfHandler.class and gradle-extracted/org/apache/ibatis/scripting/xmltags/XMLScriptBuilder$IfHandler.class differ
+Binary files maven-extracted/org/apache/ibatis/scripting/xmltags/XMLScriptBuilder$NodeHandler.class and gradle-extracted/org/apache/ibatis/scripting/xmltags/XMLScriptBuilder$NodeHandler.class differ
+Binary files maven-extracted/org/apache/ibatis/scripting/xmltags/XMLScriptBuilder$OtherwiseHandler.class and gradle-extracted/org/apache/ibatis/scripting/xmltags/XMLScriptBuilder$OtherwiseHandler.class differ
+Binary files maven-extracted/org/apache/ibatis/scripting/xmltags/XMLScriptBuilder$SetHandler.class and gradle-extracted/org/apache/ibatis/scripting/xmltags/XMLScriptBuilder$SetHandler.class differ
+Binary files maven-extracted/org/apache/ibatis/scripting/xmltags/XMLScriptBuilder$TrimHandler.class and gradle-extracted/org/apache/ibatis/scripting/xmltags/XMLScriptBuilder$TrimHandler.class differ
+Binary files maven-extracted/org/apache/ibatis/scripting/xmltags/XMLScriptBuilder$WhereHandler.class and gradle-extracted/org/apache/ibatis/scripting/xmltags/XMLScriptBuilder$WhereHandler.class differ
+Binary files maven-extracted/org/apache/ibatis/scripting/xmltags/XMLScriptBuilder.class and gradle-extracted/org/apache/ibatis/scripting/xmltags/XMLScriptBuilder.class differ
+Only in maven-extracted/org/apache/ibatis/scripting/xmltags: package-info.class
+Binary files maven-extracted/org/apache/ibatis/session/AutoMappingBehavior.class and gradle-extracted/org/apache/ibatis/session/AutoMappingBehavior.class differ
+Binary files maven-extracted/org/apache/ibatis/session/AutoMappingUnknownColumnBehavior$1.class and gradle-extracted/org/apache/ibatis/session/AutoMappingUnknownColumnBehavior$1.class differ
+Binary files maven-extracted/org/apache/ibatis/session/AutoMappingUnknownColumnBehavior$2.class and gradle-extracted/org/apache/ibatis/session/AutoMappingUnknownColumnBehavior$2.class differ
+Binary files maven-extracted/org/apache/ibatis/session/AutoMappingUnknownColumnBehavior$3.class and gradle-extracted/org/apache/ibatis/session/AutoMappingUnknownColumnBehavior$3.class differ
+Binary files maven-extracted/org/apache/ibatis/session/AutoMappingUnknownColumnBehavior$LogHolder.class and gradle-extracted/org/apache/ibatis/session/AutoMappingUnknownColumnBehavior$LogHolder.class differ
+Binary files maven-extracted/org/apache/ibatis/session/AutoMappingUnknownColumnBehavior.class and gradle-extracted/org/apache/ibatis/session/AutoMappingUnknownColumnBehavior.class differ
+Binary files maven-extracted/org/apache/ibatis/session/Configuration$StrictMap.class and gradle-extracted/org/apache/ibatis/session/Configuration$StrictMap.class differ
+Binary files maven-extracted/org/apache/ibatis/session/Configuration.class and gradle-extracted/org/apache/ibatis/session/Configuration.class differ
+Binary files maven-extracted/org/apache/ibatis/session/ExecutorType.class and gradle-extracted/org/apache/ibatis/session/ExecutorType.class differ
+Binary files maven-extracted/org/apache/ibatis/session/LocalCacheScope.class and gradle-extracted/org/apache/ibatis/session/LocalCacheScope.class differ
+Binary files maven-extracted/org/apache/ibatis/session/ResultContext.class and gradle-extracted/org/apache/ibatis/session/ResultContext.class differ
+Binary files maven-extracted/org/apache/ibatis/session/ResultHandler.class and gradle-extracted/org/apache/ibatis/session/ResultHandler.class differ
+Binary files maven-extracted/org/apache/ibatis/session/RowBounds.class and gradle-extracted/org/apache/ibatis/session/RowBounds.class differ
+Binary files maven-extracted/org/apache/ibatis/session/SqlSession.class and gradle-extracted/org/apache/ibatis/session/SqlSession.class differ
+Binary files maven-extracted/org/apache/ibatis/session/SqlSessionException.class and gradle-extracted/org/apache/ibatis/session/SqlSessionException.class differ
+Binary files maven-extracted/org/apache/ibatis/session/SqlSessionFactory.class and gradle-extracted/org/apache/ibatis/session/SqlSessionFactory.class differ
+Binary files maven-extracted/org/apache/ibatis/session/SqlSessionFactoryBuilder.class and gradle-extracted/org/apache/ibatis/session/SqlSessionFactoryBuilder.class differ
+Binary files maven-extracted/org/apache/ibatis/session/SqlSessionManager$SqlSessionInterceptor.class and gradle-extracted/org/apache/ibatis/session/SqlSessionManager$SqlSessionInterceptor.class differ
+Binary files maven-extracted/org/apache/ibatis/session/SqlSessionManager.class and gradle-extracted/org/apache/ibatis/session/SqlSessionManager.class differ
+Binary files maven-extracted/org/apache/ibatis/session/TransactionIsolationLevel.class and gradle-extracted/org/apache/ibatis/session/TransactionIsolationLevel.class differ
+Binary files maven-extracted/org/apache/ibatis/session/defaults/DefaultSqlSession$StrictMap.class and gradle-extracted/org/apache/ibatis/session/defaults/DefaultSqlSession$StrictMap.class differ
+Binary files maven-extracted/org/apache/ibatis/session/defaults/DefaultSqlSession.class and gradle-extracted/org/apache/ibatis/session/defaults/DefaultSqlSession.class differ
+Binary files maven-extracted/org/apache/ibatis/session/defaults/DefaultSqlSessionFactory.class and gradle-extracted/org/apache/ibatis/session/defaults/DefaultSqlSessionFactory.class differ
+Only in maven-extracted/org/apache/ibatis/session/defaults: package-info.class
+Only in maven-extracted/org/apache/ibatis/session: package-info.class
+Binary files maven-extracted/org/apache/ibatis/transaction/Transaction.class and gradle-extracted/org/apache/ibatis/transaction/Transaction.class differ
+Binary files maven-extracted/org/apache/ibatis/transaction/TransactionException.class and gradle-extracted/org/apache/ibatis/transaction/TransactionException.class differ
+Binary files maven-extracted/org/apache/ibatis/transaction/TransactionFactory.class and gradle-extracted/org/apache/ibatis/transaction/TransactionFactory.class differ
+Binary files maven-extracted/org/apache/ibatis/transaction/jdbc/JdbcTransaction.class and gradle-extracted/org/apache/ibatis/transaction/jdbc/JdbcTransaction.class differ
+Binary files maven-extracted/org/apache/ibatis/transaction/jdbc/JdbcTransactionFactory.class and gradle-extracted/org/apache/ibatis/transaction/jdbc/JdbcTransactionFactory.class differ
+Only in maven-extracted/org/apache/ibatis/transaction/jdbc: package-info.class
+Binary files maven-extracted/org/apache/ibatis/transaction/managed/ManagedTransaction.class and gradle-extracted/org/apache/ibatis/transaction/managed/ManagedTransaction.class differ
+Binary files maven-extracted/org/apache/ibatis/transaction/managed/ManagedTransactionFactory.class and gradle-extracted/org/apache/ibatis/transaction/managed/ManagedTransactionFactory.class differ
+Only in maven-extracted/org/apache/ibatis/transaction/managed: package-info.class
+Only in maven-extracted/org/apache/ibatis/transaction: package-info.class
+Binary files maven-extracted/org/apache/ibatis/type/Alias.class and gradle-extracted/org/apache/ibatis/type/Alias.class differ
+Binary files maven-extracted/org/apache/ibatis/type/ArrayTypeHandler.class and gradle-extracted/org/apache/ibatis/type/ArrayTypeHandler.class differ
+Binary files maven-extracted/org/apache/ibatis/type/BaseTypeHandler.class and gradle-extracted/org/apache/ibatis/type/BaseTypeHandler.class differ
+Binary files maven-extracted/org/apache/ibatis/type/BigDecimalTypeHandler.class and gradle-extracted/org/apache/ibatis/type/BigDecimalTypeHandler.class differ
+Binary files maven-extracted/org/apache/ibatis/type/BigIntegerTypeHandler.class and gradle-extracted/org/apache/ibatis/type/BigIntegerTypeHandler.class differ
+Binary files maven-extracted/org/apache/ibatis/type/BlobByteObjectArrayTypeHandler.class and gradle-extracted/org/apache/ibatis/type/BlobByteObjectArrayTypeHandler.class differ
+Binary files maven-extracted/org/apache/ibatis/type/BlobInputStreamTypeHandler.class and gradle-extracted/org/apache/ibatis/type/BlobInputStreamTypeHandler.class differ
+Binary files maven-extracted/org/apache/ibatis/type/BlobTypeHandler.class and gradle-extracted/org/apache/ibatis/type/BlobTypeHandler.class differ
+Binary files maven-extracted/org/apache/ibatis/type/BooleanTypeHandler.class and gradle-extracted/org/apache/ibatis/type/BooleanTypeHandler.class differ
+Binary files maven-extracted/org/apache/ibatis/type/ByteArrayTypeHandler.class and gradle-extracted/org/apache/ibatis/type/ByteArrayTypeHandler.class differ
+Binary files maven-extracted/org/apache/ibatis/type/ByteArrayUtils.class and gradle-extracted/org/apache/ibatis/type/ByteArrayUtils.class differ
+Binary files maven-extracted/org/apache/ibatis/type/ByteObjectArrayTypeHandler.class and gradle-extracted/org/apache/ibatis/type/ByteObjectArrayTypeHandler.class differ
+Binary files maven-extracted/org/apache/ibatis/type/ByteTypeHandler.class and gradle-extracted/org/apache/ibatis/type/ByteTypeHandler.class differ
+Binary files maven-extracted/org/apache/ibatis/type/CharacterTypeHandler.class and gradle-extracted/org/apache/ibatis/type/CharacterTypeHandler.class differ
+Binary files maven-extracted/org/apache/ibatis/type/ClobReaderTypeHandler.class and gradle-extracted/org/apache/ibatis/type/ClobReaderTypeHandler.class differ
+Binary files maven-extracted/org/apache/ibatis/type/ClobTypeHandler.class and gradle-extracted/org/apache/ibatis/type/ClobTypeHandler.class differ
+Binary files maven-extracted/org/apache/ibatis/type/ConflictedTypeHandler.class and gradle-extracted/org/apache/ibatis/type/ConflictedTypeHandler.class differ
+Binary files maven-extracted/org/apache/ibatis/type/DateOnlyTypeHandler.class and gradle-extracted/org/apache/ibatis/type/DateOnlyTypeHandler.class differ
+Binary files maven-extracted/org/apache/ibatis/type/DateTypeHandler.class and gradle-extracted/org/apache/ibatis/type/DateTypeHandler.class differ
+Binary files maven-extracted/org/apache/ibatis/type/DoubleTypeHandler.class and gradle-extracted/org/apache/ibatis/type/DoubleTypeHandler.class differ
+Binary files maven-extracted/org/apache/ibatis/type/EnumOrdinalTypeHandler.class and gradle-extracted/org/apache/ibatis/type/EnumOrdinalTypeHandler.class differ
+Binary files maven-extracted/org/apache/ibatis/type/EnumTypeHandler.class and gradle-extracted/org/apache/ibatis/type/EnumTypeHandler.class differ
+Binary files maven-extracted/org/apache/ibatis/type/FloatTypeHandler.class and gradle-extracted/org/apache/ibatis/type/FloatTypeHandler.class differ
+Binary files maven-extracted/org/apache/ibatis/type/InstantTypeHandler.class and gradle-extracted/org/apache/ibatis/type/InstantTypeHandler.class differ
+Binary files maven-extracted/org/apache/ibatis/type/IntegerTypeHandler.class and gradle-extracted/org/apache/ibatis/type/IntegerTypeHandler.class differ
+Binary files maven-extracted/org/apache/ibatis/type/JapaneseDateTypeHandler.class and gradle-extracted/org/apache/ibatis/type/JapaneseDateTypeHandler.class differ
+Binary files maven-extracted/org/apache/ibatis/type/JdbcType.class and gradle-extracted/org/apache/ibatis/type/JdbcType.class differ
+Binary files maven-extracted/org/apache/ibatis/type/LocalDateTimeTypeHandler.class and gradle-extracted/org/apache/ibatis/type/LocalDateTimeTypeHandler.class differ
+Binary files maven-extracted/org/apache/ibatis/type/LocalDateTypeHandler.class and gradle-extracted/org/apache/ibatis/type/LocalDateTypeHandler.class differ
+Binary files maven-extracted/org/apache/ibatis/type/LocalTimeTypeHandler.class and gradle-extracted/org/apache/ibatis/type/LocalTimeTypeHandler.class differ
+Binary files maven-extracted/org/apache/ibatis/type/LongTypeHandler.class and gradle-extracted/org/apache/ibatis/type/LongTypeHandler.class differ
+Binary files maven-extracted/org/apache/ibatis/type/MappedJdbcTypes.class and gradle-extracted/org/apache/ibatis/type/MappedJdbcTypes.class differ
+Binary files maven-extracted/org/apache/ibatis/type/MappedTypes.class and gradle-extracted/org/apache/ibatis/type/MappedTypes.class differ
+Binary files maven-extracted/org/apache/ibatis/type/MonthTypeHandler.class and gradle-extracted/org/apache/ibatis/type/MonthTypeHandler.class differ
+Binary files maven-extracted/org/apache/ibatis/type/NClobTypeHandler.class and gradle-extracted/org/apache/ibatis/type/NClobTypeHandler.class differ
+Binary files maven-extracted/org/apache/ibatis/type/NStringTypeHandler.class and gradle-extracted/org/apache/ibatis/type/NStringTypeHandler.class differ
+Binary files maven-extracted/org/apache/ibatis/type/ObjectTypeHandler.class and gradle-extracted/org/apache/ibatis/type/ObjectTypeHandler.class differ
+Binary files maven-extracted/org/apache/ibatis/type/OffsetDateTimeTypeHandler.class and gradle-extracted/org/apache/ibatis/type/OffsetDateTimeTypeHandler.class differ
+Binary files maven-extracted/org/apache/ibatis/type/OffsetTimeTypeHandler.class and gradle-extracted/org/apache/ibatis/type/OffsetTimeTypeHandler.class differ
+Binary files maven-extracted/org/apache/ibatis/type/ShortTypeHandler.class and gradle-extracted/org/apache/ibatis/type/ShortTypeHandler.class differ
+Binary files maven-extracted/org/apache/ibatis/type/SimpleTypeRegistry.class and gradle-extracted/org/apache/ibatis/type/SimpleTypeRegistry.class differ
+Binary files maven-extracted/org/apache/ibatis/type/SqlDateTypeHandler.class and gradle-extracted/org/apache/ibatis/type/SqlDateTypeHandler.class differ
+Binary files maven-extracted/org/apache/ibatis/type/SqlTimeTypeHandler.class and gradle-extracted/org/apache/ibatis/type/SqlTimeTypeHandler.class differ
+Binary files maven-extracted/org/apache/ibatis/type/SqlTimestampTypeHandler.class and gradle-extracted/org/apache/ibatis/type/SqlTimestampTypeHandler.class differ
+Binary files maven-extracted/org/apache/ibatis/type/SqlxmlTypeHandler.class and gradle-extracted/org/apache/ibatis/type/SqlxmlTypeHandler.class differ
+Binary files maven-extracted/org/apache/ibatis/type/StringTypeHandler.class and gradle-extracted/org/apache/ibatis/type/StringTypeHandler.class differ
+Binary files maven-extracted/org/apache/ibatis/type/TimeOnlyTypeHandler.class and gradle-extracted/org/apache/ibatis/type/TimeOnlyTypeHandler.class differ
+Binary files maven-extracted/org/apache/ibatis/type/TypeAliasRegistry.class and gradle-extracted/org/apache/ibatis/type/TypeAliasRegistry.class differ
+Binary files maven-extracted/org/apache/ibatis/type/TypeException.class and gradle-extracted/org/apache/ibatis/type/TypeException.class differ
+Binary files maven-extracted/org/apache/ibatis/type/TypeHandler.class and gradle-extracted/org/apache/ibatis/type/TypeHandler.class differ
+Binary files maven-extracted/org/apache/ibatis/type/TypeHandlerRegistry.class and gradle-extracted/org/apache/ibatis/type/TypeHandlerRegistry.class differ
+Binary files maven-extracted/org/apache/ibatis/type/TypeReference.class and gradle-extracted/org/apache/ibatis/type/TypeReference.class differ
+Binary files maven-extracted/org/apache/ibatis/type/UnknownTypeHandler.class and gradle-extracted/org/apache/ibatis/type/UnknownTypeHandler.class differ
+Binary files maven-extracted/org/apache/ibatis/type/YearMonthTypeHandler.class and gradle-extracted/org/apache/ibatis/type/YearMonthTypeHandler.class differ
+Binary files maven-extracted/org/apache/ibatis/type/YearTypeHandler.class and gradle-extracted/org/apache/ibatis/type/YearTypeHandler.class differ
+Binary files maven-extracted/org/apache/ibatis/type/ZonedDateTimeTypeHandler.class and gradle-extracted/org/apache/ibatis/type/ZonedDateTimeTypeHandler.class differ
+Only in maven-extracted/org/apache/ibatis/type: package-info.class
