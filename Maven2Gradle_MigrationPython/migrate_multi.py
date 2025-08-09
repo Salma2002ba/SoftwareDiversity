@@ -196,15 +196,15 @@ def main():
 
     # settings.gradle.kts
     (out / 'settings.gradle.kts').write_text(generate_settings(root.name, data['modules']), encoding='utf-8')
-    print('✅ settings.gradle.kts generated')
+    print('settings.gradle.kts generated')
 
     # gradle.properties
     (out / 'gradle.properties').write_text(generate_properties(data['metadata'], data['properties']), encoding='utf-8')
-    print('✅ gradle.properties generated')
+    print('gradle.properties generated')
 
     # root build.gradle.kts
     (out / 'build.gradle.kts').write_text(generate_root_build(data), encoding='utf-8')
-    print('✅ root build.gradle.kts generated')
+    print('root build.gradle.kts generated')
 
     # modules
     for m in data['modules']:
@@ -212,7 +212,7 @@ def main():
         mod_dir.mkdir(exist_ok=True)
         mod_data = parse_pom(root / m / 'pom.xml')
         (mod_dir / 'build.gradle.kts').write_text(generate_module_build(mod_data), encoding='utf-8')
-        print(f'✅ module {m}/build.gradle.kts generated')
+        print(f' module {m}/build.gradle.kts generated')
 
 if __name__ == '__main__':
     main()
